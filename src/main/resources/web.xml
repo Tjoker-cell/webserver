@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+    <servlet>
+        <!--登录-->
+        <servlet-name>login</servlet-name>
+        <servlet-class>tjoker.server.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/g</url-pattern>
+        <url-pattern>/y</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <!--注册-->
+        <servlet-name>reg</servlet-name>
+        <servlet-class>tjoker.server.servlet.RegServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reg</servlet-name>
+        <url-pattern>/r</url-pattern>
+        <url-pattern>/x</url-pattern>
+    </servlet-mapping>
+</web-app>
